@@ -1,0 +1,9 @@
+<span title="{{ _('Name of file currently selected for printing') }}">{{ _('File') }}</span>: <strong data-bind="text: filename, attr: {title: filepath}"></strong>&nbsp;<strong data-bind="visible: sd">(SD)</strong><br/>
+<span title="{{ _('Slicing software used') }}">{{ _('Slicer') }}</span>: <strong data-bind="text: plugin_slicinginfo_slicer">-</strong><br/>
+<span title="{{ _('Number of layers in part') }}">{{ _('Layers') }}</span>: <strong data-bind="text: printTimeString">-</strong><br/>
+<span title="{{ _('Printer profile which was selected') }}">{{ _('Printer profile') }}</span>: <strong data-bind="text: printTimeString">-</strong><br/>
+<span title="{{ _('Hotend temperature') }}">{{ _('Hotend Temp') }}</span>: <strong data-bind="text: printTimeString">-</strong><br/>
+<span title="{{ _('Bed temperature') }}">{{ _('Bed Temp') }}</span>: <strong data-bind="text: plugin_slicinginfo_michael">-</strong><br/>
+{{ plugin_slicinginfo_slicer }}<br/>
+{{ plugin_slicinginfo_michael }}
+
