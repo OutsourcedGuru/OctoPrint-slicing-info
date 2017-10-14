@@ -6,26 +6,14 @@ title: OctoPrint-Slicing-info
 description: OctoPrint plugin to display slicing information from selected GCODE file
 author: Michael Blankenship
 license: AGPLv3
-
-# TODO
-date: today's date in format YYYY-MM-DD, e.g. 2015-04-21
+date: 2017-10-14
 
 homepage: https://github.com/OutsourcedGuru/OctoPrint-slicing-info
 source: https://github.com/OutsourcedGuru/OctoPrint-slicing-info
 archive: https://github.com/OutsourcedGuru/OctoPrint-slicing-info/archive/master.zip
-
-# TODO
-# Set this to true if your plugin uses the dependency_links setup parameter to include
-# library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
-#follow_dependency_links: false
-
-# TODO
+follow_dependency_links: false
 tags:
-- a list
-- of tags
-- that apply
-- to your plugin
-- (take a look at the existing plugins for what makes sense here)
+- slicing information
 
 # TODO
 screenshots:
@@ -40,50 +28,6 @@ screenshots:
 # TODO
 featuredimage: url of a featured image for your plugin, /assets/img/...
 
-# TODO
-# You only need the following if your plugin requires specific OctoPrint versions or
-# specific operating systems to function - you can safely remove the whole
-# "compatibility" block if this is not the case.
-
-compatibility:
-
-  # List of compatible versions
-  #
-  # A single version number will be interpretated as a minimum version requirement,
-  # e.g. "1.3.1" will show the plugin as compatible to OctoPrint versions 1.3.1 and up.
-  # More sophisticated version requirements can be modelled too by using PEP440
-  # compatible version specifiers.
-  #
-  # You can also remove the whole "octoprint" block. Removing it will default to all
-  # OctoPrint versions being supported.
-
-  octoprint:
-  - 1.2.0
-
-  # List of compatible operating systems
-  #
-  # Valid values:
-  #
-  # - windows
-  # - linux
-  # - macos
-  # - freebsd
-  #
-  # There are also two OS groups defined that get expanded on usage:
-  #
-  # - posix: linux, macos and freebsd
-  # - nix: linux and freebsd
-  #
-  # You can also remove the whole "os" block. Removing it will default to all
-  # operating systems being supported.
-
-  os:
-  - linux
-  - windows
-  - macos
-  - freebsd
-
 ---
 
-**TODO**: Longer description of your plugin, configuration examples etc. This part will be visible on the page at
-http://plugins.octoprint.org/plugin/slicing-info/
+I personally save a variety of GCODE files from past slicing attempts yet over time, I tweak my slicer's settings. It would be nice to select a GCODE file and review some of those slicer settings before sending it off to print. This plugin appears in the sidebar and should display some information that's useful.
