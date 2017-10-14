@@ -17,6 +17,11 @@ class SlicingInfoPlugin(octoprint.plugin.StartupPlugin,
       slicerString="Cura"
 		)
 
+	def get_template_configs(self):
+		return [
+			dict(type="sidebar", custom_bindings=True)
+		]
+
 	def get_template_vars(self):
 		return dict(
 			slicer=self._settings.get(["slicerString"]),
@@ -55,7 +60,7 @@ class SlicingInfoPlugin(octoprint.plugin.StartupPlugin,
 		)
 
 
-__plugin_name__ = "Slicing Info"
+__plugin_name__ = "SlicingInfo"
 
 def __plugin_load__():
 	global __plugin_implementation__
